@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtora AI Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Virtora AI</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#demo">Demo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Virtora AI Assistant</span>
+                </h1>
+                <p class="hero-subtitle">The future of intelligent assistance is here</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Get Started</button>
+                    <button class="btn-secondary">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="ai-orb">
+                    <div class="orb-core"></div>
+                    <div class="orb-ring"></div>
+                    <div class="orb-particles"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Interface -->
+    <section class="chat-section">
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="chat-avatar">
+                    <div class="avatar-glow"></div>
+                </div>
+                <div class="chat-info">
+                    <h3>Virtora</h3>
+                    <span class="status">Online</span>
+                </div>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message ai-message">
+                    <div class="message-content">
+                        <span class="typing-indicator" id="typingIndicator">Virtora is typing...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Ask Virtora anything..." id="chatInput">
+                <button class="send-btn">Send</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-brain"></div>
+                    </div>
+                    <h3>Advanced AI</h3>
+                    <p>Powered by cutting-edge artificial intelligence technology</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-chat"></div>
+                    </div>
+                    <h3>Natural Conversation</h3>
+                    <p>Engage in human-like conversations with contextual understanding</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-lightning"></div>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Get instant responses with optimized performance</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-shield"></div>
+                    </div>
+                    <h3>Secure & Private</h3>
+                    <p>Your data is protected with enterprise-grade security</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Virtora</h2>
+                    <p>Virtora is an advanced AI assistant designed to revolutionize how we interact with technology. Built with state-of-the-art machine learning algorithms, Virtora understands context, learns from interactions, and provides intelligent assistance across various domains.</p>
+                    <p>Our mission is to create a seamless bridge between human intelligence and artificial intelligence, making advanced AI capabilities accessible to everyone.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>99.9%</h3>
+                            <p>Uptime</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1M+</h3>
+                            <p>Users</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="neural-network">
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="connection"></div>
+                        <div class="connection"></div>
+                        <div class="connection"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <h2 class="section-title">Try Demo</h2>
+            <div class="demo-container">
+                <div class="demo-interface">
+                    <div class="demo-screen">
+                        <div class="demo-header">
+                            <div class="demo-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <h4>Virtora Demo</h4>
+                        </div>
+                        <div class="demo-content">
+                            <div class="demo-message">
+                                <p>Hello! I'm Virtora, your AI assistant. How can I help you today?</p>
+                            </div>
+                            <div class="demo-input">
+                                <input type="text" placeholder="Type your message here..." readonly>
+                                <button class="demo-btn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-info">
+                    <h3>Experience Virtora</h3>
+                    <p>Try our interactive demo to see Virtora in action. Ask questions, request assistance, or simply have a conversation with our advanced AI.</p>
+                    <button class="btn-primary">Start Demo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Virtora AI</h3>
+                    <p>The future of AI assistance</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#features">Features</a>
+                    <a href="#about">About</a>
+                    <a href="#demo">Demo</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Virtora AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
